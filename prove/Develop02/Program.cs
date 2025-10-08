@@ -103,7 +103,6 @@ class Program
 
             if (choice == "1")
             {
-                // Write a new entry
                 Entry newEntry = new Entry();
                 
                 DateTime theCurrentTime = DateTime.Now;
@@ -119,19 +118,16 @@ class Program
             }
             else if (choice == "2")
             {
-                // Display all entries
                 theJournal.DisplayAll();
             }
             else if (choice == "3")
             {
-                // Load from file
                 Console.Write("What is the filename? ");
                 string filename = Console.ReadLine();
                 theJournal.LoadFromFile(filename);
             }
             else if (choice == "4")
             {
-                // Save to file
                 Console.Write("What is the filename? ");
                 string filename = Console.ReadLine();
                 theJournal.SaveToFile(filename);
